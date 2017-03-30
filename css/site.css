@@ -1675,6 +1675,11 @@ i[class*="icon-"]:before {
   background-size: cover;
   background-position: center;
 }
+.section--about .container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
 .section--casestudies:after {
   content: " ";
   position: absolute;
