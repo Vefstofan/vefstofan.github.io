@@ -1,0 +1,141 @@
+// Shadow
+
+.box-shadow(@shadow: 0 1px 3px rgba(0,0,0,.25)) {
+  -webkit-box-shadow: @shadow;
+  -moz-box-shadow: @shadow;
+  box-shadow: @shadow;
+}
+
+// Text shadow
+
+.text-shadow (@shadow: 0px 1px 0px rgba(255,255,255, 0.75)) {
+	text-shadow: @shadow;
+}
+
+// Gradients
+
+.gradient(@start-color:#eee,@end-color: #fff) {
+    background-color:@start-color;
+    background: -webkit-linear-gradient(@start-color, @end-color);
+    background: -o-linear-gradient(@start-color, @end-color);
+    background: -moz-linear-gradient(@start-color, @end-color);
+    background: linear-gradient(@start-color, @end-color);
+}
+
+.gradient-horizontal(@from, @to) {
+    background-color: @to;
+    background-repeat: repeat-x;
+    background-image: -khtml-gradient(linear, left top, right top, from(@from), to(@to)); /* Konqueror */
+    background-image: -moz-linear-gradient(left, @from, @to); /* FF 3.6+ */
+    background-image: -ms-linear-gradient(left, @from, @to); /* IE10 */
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, @from), color-stop(100%, @to)); /* Safari 4+, Chrome 2+ */
+    background-image: -webkit-linear-gradient(left, @from, @to); /* Safari 5.1+, Chrome 10+ */
+    background-image: -o-linear-gradient(left, @from, @to); /* Opera 11.10 */
+    //-ms-filter: %("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",@from,@to); /* IE8+ */
+    background-image: linear-gradient(left, @from, @to); /* the standard */
+}
+
+
+.gradient-multi(@first, @second, @third) {
+    background-color: @second;
+    background-repeat: repeat-x;
+    background-image: -moz-linear-gradient(top, @first, @second, @third); /* FF 3.6+ */
+    background-image: -ms-linear-gradient(top, @first, @second, @third); /* IE10 */
+    background-image: -webkit-linear-gradient(top, @first, @second, @third); /* Safari 5.1+, Chrome 10+ */
+    background-image: -o-linear-gradient(top, @first, @second, @third); /* Opera 11.10 */
+    background-image: linear-gradient(top, @first, @second, @third); /* the standard */
+}
+
+// Rounded corners
+
+.border-radius(@radius) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+// Opacity
+
+.opacity(@opacity: 0.5) {
+	filter: e(%("alpha(opacity=%d)", @opacity * 100));
+	-khtml-opacity: @opacity;
+	-moz-opacity: @opacity;
+	opacity: @opacity;
+}
+
+// Animation
+
+.transition(@transition: all 200ms ease-out) {
+	-webkit-transition: @transition;
+	-moz-transition: @transition;
+	-ms-transition: @transition;
+	-o-transition: @transition;
+	transition: @transition;
+}
+
+// Transformation
+
+.transform (@transform: rotate(15deg)) {
+	-webkit-transform: @transform; 
+	-moz-transform: @transform;       
+	-ms-transform: @transform;        
+	-o-transform: @transform;         
+	transform: @transform;
+}
+
+// Box sizing
+
+.box-sizing(@boxmodel) {
+	-webkit-box-sizing: @boxmodel;
+	-moz-box-sizing: @boxmodel;
+	-ms-box-sizing: @boxmodel;
+	box-sizing: @boxmodel;
+}
+
+// Text ellipsis
+
+.text-ellipsis {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.border-pointer(@color: #FFFFFF) {
+	content: " ";
+	bottom: 100%;
+	border: solid transparent;
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	left: 50%;
+	top: auto;
+	right: auto;
+	border-bottom-color: @color;
+	border-width: 8px;
+	margin-left: -8px;
+	display: block;
+}
+
+// Clear floats
+
+.clear {
+	*zoom: 1;
+	&:before,
+	&:after {
+		display: table;
+		content: "";
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+.hide {
+	position: absolute;
+	left: -9999em;
+}
+
+.remove {
+	display: none;
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2014-6-12: Created.
+-->
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>
+Created by FontForge 20120731 at Thu Jun 12 13:14:42 2014
+ By Andri Sigurðsson
+Created by Andri Sigur&#195;&#176;sson with FontForge 2.0 (http://fontforge.sf.net)
+</metadata>
+<defs>
+<font id="fontcustom" horiz-adv-x="512" >
+  <font-face 
+    font-family="fontcustom"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="512"
+    panose-1="2 0 6 9 0 0 0 0 0 0"
+    ascent="448"
+    descent="-64"
+    bbox="0 -16.1006 512 400.612"
+    underline-thickness="25.6"
+    underline-position="-51.2"
+    unicode-range="U+F100-F103"
+  />
+    <missing-glyph />
+    <glyph glyph-name="uniF101" unicode="&#xf101;" 
+d="M153.6 320h204.801l153.6 -25.5996v-307.2h-512v307.2zM473.6 25.5996v230.4l-115.199 25.5996h-204.801l-115.199 -25.5996v-230.4h435.199zM358.4 396.8l153.6 -25.5996v-38.4004l-153.6 25.6006h-204.801l-153.6 -25.6006v38.4004l153.6 25.5996h204.801zM153.6 192
+v51.2002h51.2002v-51.2002h-51.2002zM230.4 192v51.2002h51.1992v-51.2002h-51.1992zM307.2 192v51.2002h51.2002v-51.2002h-51.2002zM153.6 128v51.2002h51.2002v-51.2002h-51.2002zM230.4 128v51.2002h51.1992v-51.2002h-51.1992zM307.2 128v51.2002h51.2002v-51.2002
+h-51.2002zM153.6 64v51.2002h51.2002v-51.2002h-51.2002zM230.4 64v51.2002h51.1992v-51.2002h-51.1992zM307.2 64v51.2002h51.2002v-51.2002h-51.2002z" />
+    <glyph glyph-name="uniF100" unicode="&#xf100;" 
+d="M0 396.8h512v-409.6h-512v409.6zM256 167.953l190.447 190.447h-380.894zM177.646 192l-139.246 139.247v-278.494zM204.8 164.847l-139.247 -139.247h380.895l-139.247 139.248l-51.2002 -51.2012zM334.354 192l139.246 -139.248v278.496z" />
+    <glyph glyph-name="uniF102" unicode="&#xf102;" 
+d="M256 396.8h256v-256h-38.4004v190.448l-191.224 -191.225l-27.1523 27.1523l191.224 191.225h-190.447v38.3994zM473.6 25.5996v76.8008h38.4004v-115.2h-512v409.6h217.6v-38.3994h-179.199v-332.801h435.199z" />
+    <glyph glyph-name="uniF103" unicode="&#xf103;" 
+d="M464.612 380.699l-194.845 -194.843l182.045 -182.044l-19.9131 -19.9131l-182.043 182.045l-182.044 -182.045l-19.9131 19.9131l182.045 182.044l-182.045 182.043l19.9131 19.9131l182.044 -182.045l194.843 194.845z" />
+  </font>
+</defs></svg>
