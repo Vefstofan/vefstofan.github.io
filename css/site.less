@@ -188,21 +188,31 @@ i[class*="icon-"]:before {
 			transition: @transitionBezier;
 		}
 	}
+	.menu__logo-type {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+		text-align: center;
+		svg path {
+			transition: @transitionBezier;
+		}
+	}
 	&.inview__section--about {
 		background: @color-white;
-		.menu__logo svg path {
+		.menu__logo svg path, .menu__logo-type svg path {
 			fill: @color-blue;
 		}
 	}
 	&.inview__section--services {
 		background: @color-darkgray;
-		.menu__logo svg path {
+		.menu__logo svg path, .menu__logo-type svg path {
 			fill: @color-white;
 		}
 	}
 	&.inview__section--casestudies {
 		background: @color-gray;
-		.menu__logo svg path {
+		.menu__logo svg path, .menu__logo-type svg path {
 			fill: @color-darkgray;
 		}
 	}
