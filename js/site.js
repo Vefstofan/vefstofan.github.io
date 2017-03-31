@@ -1,8 +1,6 @@
 $(function() {
 
-	// Setup
-
-	$(window).on("scroll", function() {
+	function menuState(){
 
 		$menu = $(".menu");
 
@@ -15,7 +13,16 @@ $(function() {
 			}
 		});
 
+	}
+
+
+	$(window).on("scroll", function() {
+
+		menuState();
+
 	});
+
+	// Helpers
 
 	$.fn.alterClass = function ( removals, additions ) {
 		

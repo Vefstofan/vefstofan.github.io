@@ -1382,15 +1382,24 @@ a.btn {
   border: 3px solid #2D1BF1;
   box-sizing: border-box;
 }
-.btn:hover {
-  background: #15123F;
-  border-color: transparent;
-  color: #fff;
+a.btn:hover {
+  border-color: #15123F;
+  color: #15123F;
   -webkit-transition: all 200ms ease-out;
   -moz-transition: all 200ms ease-out;
   -ms-transition: all 200ms ease-out;
   -o-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
+}
+.btn-white,
+a.btn-white {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+.btn-white:hover,
+a.btn-white:hover {
+  color: #2D1BF1;
+  border-color: #2D1BF1;
 }
 i[class*="icon-"] {
   display: inline-block;
@@ -1421,7 +1430,7 @@ i[class*="icon-"]:before {
   padding-top: 1rem;
 }
 .menu .menu__logo svg path {
-  transition: all 200ms cubic-bezier(0.4, 0.15, 0, 0.975);
+  transition: all 250ms cubic-bezier(0.4, 0.15, 0, 0.975);
 }
 .menu .menu__logo-type {
   position: absolute;
@@ -1431,7 +1440,7 @@ i[class*="icon-"]:before {
   text-align: center;
 }
 .menu .menu__logo-type svg path {
-  transition: all 200ms cubic-bezier(0.4, 0.15, 0, 0.975);
+  transition: all 250ms cubic-bezier(0.4, 0.15, 0, 0.975);
 }
 .menu.inview__section--about {
   background: #FFFFFF;
@@ -1536,6 +1545,37 @@ i[class*="icon-"]:before {
   transform: translateY(-50%);
   left: 0;
   right: 0;
+}
+.card.card--hover .card__col--cta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: all 250ms cubic-bezier(0.4, 0.15, 0, 0.975);
+}
+.card.card--hover .card__col--cta .card__col--cta-c {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+}
+.card.card--hover .card__col--cta .card__col--cta-c .btn {
+  display: inline-block;
+  position: relative;
+  top: 1rem;
+}
+.card.card--hover .card__col:hover .card__col--cta {
+  z-index: 5;
+  background: #15123F;
+  transition: all 250ms cubic-bezier(0.4, 0.15, 0, 0.975);
+  opacity: 1;
+}
+.card.card--hover .card__col:hover .card__col--cta .btn {
+  top: 0;
 }
 .card .card__layer {
   position: absolute;
@@ -1675,11 +1715,6 @@ i[class*="icon-"]:before {
   background-size: cover;
   background-position: center;
 }
-.section--about .container {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
 .section--casestudies:after {
   content: " ";
   position: absolute;
@@ -1687,7 +1722,7 @@ i[class*="icon-"]:before {
   border-left: 3px solid #fff;
   height: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 10;
 }
 .section--casestudies:before {
   content: " ";
@@ -1696,7 +1731,7 @@ i[class*="icon-"]:before {
   border-top: 3px solid #fff;
   width: calc(100% - 3rem);
   top: calc(50% - 0.035rem);
-  z-index: 1;
+  z-index: 10;
 }
 .section--casestudies.card .col-content {
   padding: 3rem;
