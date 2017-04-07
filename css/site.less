@@ -455,6 +455,14 @@ i[class*="icon-"]:before {
 			padding-bottom: 3rem;
 		}
 	}
+	&.card--center .container {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		.col-content {
+			padding-top: 0;
+		}
+	}
 	&.card--intro {
 		h1 {
 			font-size: 4rem;
@@ -563,6 +571,16 @@ i[class*="icon-"]:before {
 
 */
 
+.section--grid {
+	&.col-group {
+		margin-left: -1rem;
+		margin-right: -1rem;
+	}
+	.section--grid__item {
+		padding: 0 1rem 0 1rem;
+	}
+}
+
 // About
 
 .section--about {
@@ -589,12 +607,6 @@ i[class*="icon-"]:before {
 }
 
 // Work
-
-.section--work {
-	background-image: url(../img/section-work.jpg);
-	background-size: cover;
-	background-position: center;
-}
 
 .page--work .section--work-results {
 	.col-content h1 {
@@ -699,8 +711,39 @@ i[class*="icon-"]:before {
 	}
 }
 
+// About
 
+.section--whatweare {
+	h1 {
+		font-size: 4rem;
+	}
+}
 
+.section--whatwebelieve {
+	.section--grid h1 {
+		font-size: 1.5rem;
+	}
+	.section--grid .col-content {
+		padding-top: 1rem;
+	}
+	p {
+		font-size: 1rem;
+	}
+}
+
+.section--ourvalues {
+	.section--ourvalues__item {
+		.col-content {
+			padding-top: 0;
+		}
+		h1 {
+			font-size: 1.5rem;
+		}
+		p {
+			font-size: 1rem;
+		}
+	}
+}
 
 
 @media (min-width: @screenTablet) {

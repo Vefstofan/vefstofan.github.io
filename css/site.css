@@ -1700,6 +1700,14 @@ i[class*="icon-"]:before {
 .card.card--adaptive .col-content {
   padding-bottom: 3rem;
 }
+.card.card--center .container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.card.card--center .container .col-content {
+  padding-top: 0;
+}
 .card.card--intro h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
@@ -1868,6 +1876,13 @@ i[class*="icon-"]:before {
 	Sections
 
 */
+.section--grid.col-group {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+.section--grid .section--grid__item {
+  padding: 0 1rem 0 1rem;
+}
 .section--about {
   background-image: url(../img/section-about.jpg);
   background-size: cover;
@@ -1879,11 +1894,6 @@ i[class*="icon-"]:before {
 .section--casestudies.card .col-content {
   padding-left: calc(16.66666667%);
   padding-right: calc(16.66666667%);
-}
-.section--work {
-  background-image: url(../img/section-work.jpg);
-  background-size: cover;
-  background-position: center;
 }
 .page--work .section--work-results .col-content h1 {
   color: #15123F;
@@ -1945,6 +1955,27 @@ i[class*="icon-"]:before {
 .page--valitor .section--casestudies .card__col .btn:hover {
   border-color: #e94811;
   color: #e94811;
+}
+.section--whatweare h1 {
+  font-size: 4rem;
+}
+.section--whatwebelieve .section--grid h1 {
+  font-size: 1.5rem;
+}
+.section--whatwebelieve .section--grid .col-content {
+  padding-top: 1rem;
+}
+.section--whatwebelieve p {
+  font-size: 1rem;
+}
+.section--ourvalues .section--ourvalues__item .col-content {
+  padding-top: 0;
+}
+.section--ourvalues .section--ourvalues__item h1 {
+  font-size: 1.5rem;
+}
+.section--ourvalues .section--ourvalues__item p {
+  font-size: 1rem;
 }
 @media (min-width: 768px) {
   html,
