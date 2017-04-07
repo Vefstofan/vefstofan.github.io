@@ -12,7 +12,7 @@ var autoprefixer = require('gulp-autoprefixer');
 // concat and minify scripts task
 gulp.task('scripts', function() {
   gulp.src(['./components/jquery/dist/jquery.js','./js/site.js'])
-    .pipe(concat('dokka.js'))
+    .pipe(concat('sigur.js'))
     .pipe(gulp.dest('./js/'))
     .pipe(uglify())
     .pipe(rename({

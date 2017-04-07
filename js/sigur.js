@@ -10221,6 +10221,15 @@ return jQuery;
 
 $(function() {
 
+	// Menu button
+
+	$(".menu .menu__button").on("click", function(event){
+		$(".menu-list").toggleClass("menu-list--on");
+		event.preventDefault();
+	});
+
+	// Menu state
+
 	function menuState(){
 
 		$menu = $(".menu");
