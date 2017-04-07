@@ -40,16 +40,16 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 4rem; // 36px
+	font-size: 4rem; // 96px
 	line-height: 1;
 }
 
 h2 {
-	font-size: 2rem; // 24px
+	font-size: 1.5rem; // 36px
 }
 
 h3 {
-	font-size: 1rem; // 18px
+	font-size: 1rem; // 24px
 }
 
 p {
@@ -178,7 +178,7 @@ i[class*="icon-"]:before {
 
 */
 
-.menu {
+.page .menu {
 	background: @color-blue;
 	width: 3rem;
 	position: fixed;
@@ -223,6 +223,31 @@ i[class*="icon-"]:before {
 			fill: @color-darkgray;
 		}
 	}
+	&.inview__section--tempo {
+		background: @color-white;
+		.menu__logo svg path, .menu__logo-type svg path {
+			fill: @color-darkgray;
+		}
+	}
+	&.inview__section--work-intro {
+		background: @color-gray;
+		.menu__logo svg path, .menu__logo-type svg path {
+			fill: @color-darkgray;
+		}
+	}
+	&.inview__section--work-content {
+		background: @color-darkgray;
+		.menu__logo svg path, .menu__logo-type svg path {
+			fill: @color-white;
+		}
+	}
+}
+
+.page--work .menu {
+	background: @color-white;
+	.menu__logo svg path, .menu__logo-type svg path {
+		fill: @color-darkgray;
+	}
 }
 
 /*
@@ -238,7 +263,17 @@ i[class*="icon-"]:before {
 	p {
 		font-size: 1.5em;
 		line-height: 1.25;
+	}
+	strong {
 		font-weight: 700;
+	}
+	h1 {
+		font-size: 2.5em;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+
 	}
 	.container {
 		position: relative;
@@ -310,6 +345,27 @@ i[class*="icon-"]:before {
 			right: 0;
 		}
 	}
+	&.card--gridlines {
+		&:after {
+			content: " ";
+			position: absolute;
+			left: ~"calc(50% - 1.535rem)";
+			border-left: 3px solid #fff;
+			height: 100%;
+			top: 0;
+			z-index: 10;
+		}
+
+		&:before {
+			content: " ";
+			position: absolute;
+			left: 0;
+			border-top: 3px solid #fff;
+			width: ~"calc(100% - 3rem)";
+			top: ~"calc(50% - 0.035rem)";
+			z-index: 10;
+		}
+	}
 	&.card--hover {
 		.card__col--cta {
 			position: absolute;
@@ -342,6 +398,32 @@ i[class*="icon-"]:before {
 			.btn {
 				top: 0;
 			}
+		}
+	}
+	&.card--half {
+		height: 50vh;
+		&:before {
+			display: none;
+		}
+	}
+	&.card--adaptive {
+		height: auto;
+		.col-content {
+			padding-bottom: 3rem;
+		}
+	}
+	&.card--intro {
+		h1 {
+			font-size: 4rem;
+			margin-bottom: 1rem;
+		}
+		.card__intro--subtitle {
+			margin-top: 0;
+		}
+	}
+	&.card--macbook {
+		.col-content img {
+			margin-top: 3rem;
 		}
 	}
 	.card__layer {
@@ -403,6 +485,35 @@ i[class*="icon-"]:before {
 	} 
 }
 
+// Photogrid 
+
+.photogrid {
+	margin-top: 3rem;
+	.col-group {
+		margin-bottom: 3px;
+		position: relative;
+	}
+	.photogrid__item {
+		padding-left: 1px;
+		padding-right: 2px;
+		box-shadow: 0 0 108px fade(@color-darkgray, 20%);
+		img {
+			display: block;
+		}
+	}
+	.photogrid__item--bottom {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		img {
+			position: absolute;
+			bottom: 0;
+			width: ~"calc(100% - 3px)";
+		}
+	}
+}
+
+
 /*
 
 	Sections
@@ -424,33 +535,19 @@ i[class*="icon-"]:before {
 
 // Case studies
 
-.section--casestudies:after {
-	content: " ";
-	position: absolute;
-	left: ~"calc(50% - 1.535rem)";
-	border-left: 3px solid #fff;
-	height: 100%;
-	top: 0;
-	z-index: 10;
-}
-
-.section--casestudies:before {
-	content: " ";
-	position: absolute;
-	left: 0;
-	border-top: 3px solid #fff;
-	width: ~"calc(100% - 3rem)";
-	top: ~"calc(50% - 0.035rem)";
-	z-index: 10;
-}
-
 .section--casestudies.card {
+	h1 {
+		font-size: 2.5rem;
+	}
 	.col-content {
-		padding: 3rem;
+		padding-left: calc(1 / 6% * 100);
+		padding-right: calc(1 / 6% * 100);
 	}
 }
 
 // Work
+
+@color-tempo: #2FC4F3;
 
 .section--work {
 	background-image: url(../img/section-work.jpg);
@@ -458,6 +555,55 @@ i[class*="icon-"]:before {
 	background-position: center;
 }
 
+.section.section--tempo {
+	background-image: url(../img/section-tempo.jpg);
+	background-size: cover;
+	background-position: center;
+	background-color: @color-tempo;	
+}
+
+.page--tempo .section--work-content {
+	.col-content h1 {
+		color: @color-tempo;
+	}
+}
+
+.page--tempo .card--quote {
+	background: @color-tempo;
+}
+
+.page--tempo .section--work-results {
+	.col-content h1 {
+		color: @color-darkgray;
+	}
+}
+
+.page--tempo .section--casestudies .card__col  {
+	background: @color-darkgray;
+	.btn:hover {
+		border-color: @color-tempo;
+		color: @color-tempo;
+	}
+}
+
+
+ .section--valitor {
+ 	background-image: url(../img/section-valitor.jpg);
+	background-size: cover;
+	background-position: center;	
+ }
+
+.section--diving-island {
+ 	background-image: url(../img/section-diving-island.jpg);
+	background-size: cover;
+	background-position: center;	
+}
+
+.section--ls-retail {
+ 	background-image: url(../img/section-lsretail.jpg);
+	background-size: cover;
+	background-position: center;
+}
 
 @media (min-width: @screenTablet) {
 

@@ -1279,7 +1279,7 @@ h1 {
   line-height: 1;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 h3 {
   font-size: 1rem;
@@ -1414,7 +1414,7 @@ i[class*="icon-"]:before {
 	Menu
 
 */
-.menu {
+.page .menu {
   background: #2D1BF1;
   width: 3rem;
   position: fixed;
@@ -1423,44 +1423,72 @@ i[class*="icon-"]:before {
   height: 100%;
   z-index: 100;
 }
-.menu .menu__logo {
+.page .menu .menu__logo {
   margin: 0 auto;
   width: 1rem;
   text-align: center;
   padding-top: 1rem;
 }
-.menu .menu__logo svg path {
+.page .menu .menu__logo svg path {
   transition: all 250ms cubic-bezier(0.4, 0.15, 0, 0.975);
 }
-.menu .menu__logo-type {
+.page .menu .menu__logo-type {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
   text-align: center;
 }
-.menu .menu__logo-type svg path {
+.page .menu .menu__logo-type svg path {
   transition: all 250ms cubic-bezier(0.4, 0.15, 0, 0.975);
 }
-.menu.inview__section--about {
+.page .menu.inview__section--about {
   background: #FFFFFF;
 }
-.menu.inview__section--about .menu__logo svg path,
-.menu.inview__section--about .menu__logo-type svg path {
+.page .menu.inview__section--about .menu__logo svg path,
+.page .menu.inview__section--about .menu__logo-type svg path {
   fill: #2D1BF1;
 }
-.menu.inview__section--services {
+.page .menu.inview__section--services {
   background: #15123F;
 }
-.menu.inview__section--services .menu__logo svg path,
-.menu.inview__section--services .menu__logo-type svg path {
+.page .menu.inview__section--services .menu__logo svg path,
+.page .menu.inview__section--services .menu__logo-type svg path {
   fill: #FFFFFF;
 }
-.menu.inview__section--casestudies {
+.page .menu.inview__section--casestudies {
   background: #EAE8FD;
 }
-.menu.inview__section--casestudies .menu__logo svg path,
-.menu.inview__section--casestudies .menu__logo-type svg path {
+.page .menu.inview__section--casestudies .menu__logo svg path,
+.page .menu.inview__section--casestudies .menu__logo-type svg path {
+  fill: #15123F;
+}
+.page .menu.inview__section--tempo {
+  background: #FFFFFF;
+}
+.page .menu.inview__section--tempo .menu__logo svg path,
+.page .menu.inview__section--tempo .menu__logo-type svg path {
+  fill: #15123F;
+}
+.page .menu.inview__section--work-intro {
+  background: #EAE8FD;
+}
+.page .menu.inview__section--work-intro .menu__logo svg path,
+.page .menu.inview__section--work-intro .menu__logo-type svg path {
+  fill: #15123F;
+}
+.page .menu.inview__section--work-content {
+  background: #15123F;
+}
+.page .menu.inview__section--work-content .menu__logo svg path,
+.page .menu.inview__section--work-content .menu__logo-type svg path {
+  fill: #FFFFFF;
+}
+.page--work .menu {
+  background: #FFFFFF;
+}
+.page--work .menu .menu__logo svg path,
+.page--work .menu .menu__logo-type svg path {
   fill: #15123F;
 }
 /*
@@ -1476,7 +1504,16 @@ i[class*="icon-"]:before {
 .card p {
   font-size: 1.5em;
   line-height: 1.25;
+}
+.card strong {
   font-weight: 700;
+}
+.card h1 {
+  font-size: 2.5em;
+}
+.card ul {
+  list-style: none;
+  padding: 0;
 }
 .card .container {
   position: relative;
@@ -1546,6 +1583,24 @@ i[class*="icon-"]:before {
   left: 0;
   right: 0;
 }
+.card.card--gridlines:after {
+  content: " ";
+  position: absolute;
+  left: calc(50% - 1.535rem);
+  border-left: 3px solid #fff;
+  height: 100%;
+  top: 0;
+  z-index: 10;
+}
+.card.card--gridlines:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  border-top: 3px solid #fff;
+  width: calc(100% - 3rem);
+  top: calc(50% - 0.035rem);
+  z-index: 10;
+}
 .card.card--hover .card__col--cta {
   position: absolute;
   top: 0;
@@ -1576,6 +1631,28 @@ i[class*="icon-"]:before {
 }
 .card.card--hover .card__col:hover .card__col--cta .btn {
   top: 0;
+}
+.card.card--half {
+  height: 50vh;
+}
+.card.card--half:before {
+  display: none;
+}
+.card.card--adaptive {
+  height: auto;
+}
+.card.card--adaptive .col-content {
+  padding-bottom: 3rem;
+}
+.card.card--intro h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.card.card--intro .card__intro--subtitle {
+  margin-top: 0;
+}
+.card.card--macbook .col-content img {
+  margin-top: 3rem;
 }
 .card .card__layer {
   position: absolute;
@@ -1705,6 +1782,31 @@ i[class*="icon-"]:before {
 .card .card__layer .card__layer--box.card__layer--light {
   background: #EAE8FD;
 }
+.photogrid {
+  margin-top: 3rem;
+}
+.photogrid .col-group {
+  margin-bottom: 3px;
+  position: relative;
+}
+.photogrid .photogrid__item {
+  padding-left: 1px;
+  padding-right: 2px;
+  box-shadow: 0 0 108px rgba(21, 18, 63, 0.2);
+}
+.photogrid .photogrid__item img {
+  display: block;
+}
+.photogrid .photogrid__item--bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.photogrid .photogrid__item--bottom img {
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 3px);
+}
 /*
 
 	Sections
@@ -1715,29 +1817,52 @@ i[class*="icon-"]:before {
   background-size: cover;
   background-position: center;
 }
-.section--casestudies:after {
-  content: " ";
-  position: absolute;
-  left: calc(50% - 1.535rem);
-  border-left: 3px solid #fff;
-  height: 100%;
-  top: 0;
-  z-index: 10;
-}
-.section--casestudies:before {
-  content: " ";
-  position: absolute;
-  left: 0;
-  border-top: 3px solid #fff;
-  width: calc(100% - 3rem);
-  top: calc(50% - 0.035rem);
-  z-index: 10;
+.section--casestudies.card h1 {
+  font-size: 2.5rem;
 }
 .section--casestudies.card .col-content {
-  padding: 3rem;
+  padding-left: calc(16.66666667%);
+  padding-right: calc(16.66666667%);
 }
 .section--work {
   background-image: url(../img/section-work.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.section.section--tempo {
+  background-image: url(../img/section-tempo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #2FC4F3;
+}
+.page--tempo .section--work-content .col-content h1 {
+  color: #2FC4F3;
+}
+.page--tempo .card--quote {
+  background: #2FC4F3;
+}
+.page--tempo .section--work-results .col-content h1 {
+  color: #15123F;
+}
+.page--tempo .section--casestudies .card__col {
+  background: #15123F;
+}
+.page--tempo .section--casestudies .card__col .btn:hover {
+  border-color: #2FC4F3;
+  color: #2FC4F3;
+}
+.section--valitor {
+  background-image: url(../img/section-valitor.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.section--diving-island {
+  background-image: url(../img/section-diving-island.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.section--ls-retail {
+  background-image: url(../img/section-lsretail.jpg);
   background-size: cover;
   background-position: center;
 }

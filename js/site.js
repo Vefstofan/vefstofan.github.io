@@ -7,7 +7,6 @@ $(function() {
 		$(".section").each(function(){
 			var section = $(this).attr("class").split(" ");
 			if (isOnElement($(this), ".menu")) {
-				console.log(section[1]);
 				$menu.alterClass("inview__*");
 				$menu.addClass("inview__" + section[1]);
 			}
@@ -15,6 +14,7 @@ $(function() {
 
 	}
 
+	//setTimeout(menuState, 100);
 
 	$(window).on("scroll", function() {
 
