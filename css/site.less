@@ -547,19 +547,29 @@ i[class*="icon-"]:before {
 
 // Work
 
-@color-tempo: #2FC4F3;
-
 .section--work {
 	background-image: url(../img/section-work.jpg);
 	background-size: cover;
 	background-position: center;
 }
 
+.page--work .section--work-results {
+	.col-content h1 {
+		color: @color-darkgray;
+	}
+}
+
+.page--work .section--casestudies .card__col  {
+	background: @color-darkgray;
+}
+
+@color-tempo: #2FC4F3;
+
 .section.section--tempo {
 	background-image: url(../img/section-tempo.jpg);
 	background-size: cover;
 	background-position: center;
-	background-color: @color-tempo;	
+	background-color: @color-tempo;
 }
 
 .page--tempo .section--work-content {
@@ -572,38 +582,83 @@ i[class*="icon-"]:before {
 	background: @color-tempo;
 }
 
-.page--tempo .section--work-results {
-	.col-content h1 {
-		color: @color-darkgray;
-	}
-}
-
 .page--tempo .section--casestudies .card__col  {
-	background: @color-darkgray;
 	.btn:hover {
 		border-color: @color-tempo;
 		color: @color-tempo;
 	}
 }
 
+@color-divingisland: #239D87;
 
- .section--valitor {
- 	background-image: url(../img/section-valitor.jpg);
-	background-size: cover;
-	background-position: center;	
- }
 
 .section--diving-island {
  	background-image: url(../img/section-diving-island.jpg);
 	background-size: cover;
-	background-position: center;	
+	background-position: center;
+	background-color: @color-divingisland;
 }
 
-.section--ls-retail {
+.page--divingisland .section--work-content {
+	.col-content h1 {
+		color: @color-divingisland;
+	}
+}
+
+.page--divingisland .section--casestudies .card__col  {
+	.btn:hover {
+		border-color: @color-divingisland;
+		color: @color-divingisland;
+	}
+}
+
+@color-lsretail: #DD2F37;
+
+.section.section--lsretail {
  	background-image: url(../img/section-lsretail.jpg);
 	background-size: cover;
 	background-position: center;
+	background-color: @color-lsretail;
 }
+
+.page--lsretail .section--work-content {
+	.col-content h1 {
+		color: @color-lsretail;
+	}
+}
+
+.page--lsretail .section--casestudies .card__col  {
+	.btn:hover {
+		border-color: @color-lsretail;
+		color: @color-lsretail;
+	}
+}
+
+@color-valitor: #e94811;
+
+.section--valitor {
+	background-image: url(../img/section-valitor.jpg);
+	background-size: cover;
+	background-position: center;
+	background-color: @color-valitor;
+}
+
+.page--valitor .section--work-content {
+	.col-content h1 {
+		color: @color-valitor;
+	}
+}
+
+.page--valitor .section--casestudies .card__col  {
+	.btn:hover {
+		border-color: @color-valitor;
+		color: @color-valitor;
+	}
+}
+
+
+
+
 
 @media (min-width: @screenTablet) {
 

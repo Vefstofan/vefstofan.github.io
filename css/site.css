@@ -1829,6 +1829,12 @@ i[class*="icon-"]:before {
   background-size: cover;
   background-position: center;
 }
+.page--work .section--work-results .col-content h1 {
+  color: #15123F;
+}
+.page--work .section--casestudies .card__col {
+  background: #15123F;
+}
 .section.section--tempo {
   background-image: url(../img/section-tempo.jpg);
   background-size: cover;
@@ -1841,30 +1847,48 @@ i[class*="icon-"]:before {
 .page--tempo .card--quote {
   background: #2FC4F3;
 }
-.page--tempo .section--work-results .col-content h1 {
-  color: #15123F;
-}
-.page--tempo .section--casestudies .card__col {
-  background: #15123F;
-}
 .page--tempo .section--casestudies .card__col .btn:hover {
   border-color: #2FC4F3;
   color: #2FC4F3;
-}
-.section--valitor {
-  background-image: url(../img/section-valitor.jpg);
-  background-size: cover;
-  background-position: center;
 }
 .section--diving-island {
   background-image: url(../img/section-diving-island.jpg);
   background-size: cover;
   background-position: center;
+  background-color: #239D87;
 }
-.section--ls-retail {
+.page--divingisland .section--work-content .col-content h1 {
+  color: #239D87;
+}
+.page--divingisland .section--casestudies .card__col .btn:hover {
+  border-color: #239D87;
+  color: #239D87;
+}
+.section.section--lsretail {
   background-image: url(../img/section-lsretail.jpg);
   background-size: cover;
   background-position: center;
+  background-color: #DD2F37;
+}
+.page--lsretail .section--work-content .col-content h1 {
+  color: #DD2F37;
+}
+.page--lsretail .section--casestudies .card__col .btn:hover {
+  border-color: #DD2F37;
+  color: #DD2F37;
+}
+.section--valitor {
+  background-image: url(../img/section-valitor.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #e94811;
+}
+.page--valitor .section--work-content .col-content h1 {
+  color: #e94811;
+}
+.page--valitor .section--casestudies .card__col .btn:hover {
+  border-color: #e94811;
+  color: #e94811;
 }
 @media (min-width: 768px) {
   html,
