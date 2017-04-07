@@ -442,9 +442,9 @@
     clear: both;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1367px) {
   .container {
-    max-width: 992px;
+    max-width: 1367px;
     margin: 0 auto;
   }
   .col-dt-12 {
@@ -637,9 +637,9 @@
     left: 0%;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1601px) {
   .container {
-    max-width: 1200px;
+    max-width: 1601px;
     margin: 0 auto;
   }
   .col-ld-12 {
@@ -1459,15 +1459,6 @@ i[class*="icon-"]:before {
 .page .menu.inview__section--about .menu__button svg polygon {
   fill: #2D1BF1;
 }
-.page .menu.inview__section--services {
-  background: #15123F;
-}
-.page .menu.inview__section--services .menu__logo svg path,
-.page .menu.inview__section--services .menu__logo-type svg path,
-.page .menu.inview__section--services .menu__button svg path,
-.page .menu.inview__section--services .menu__button svg polygon {
-  fill: #FFFFFF;
-}
 .page .menu.inview__section--casestudies {
   background: #EAE8FD;
 }
@@ -1486,13 +1477,18 @@ i[class*="icon-"]:before {
 .page .menu.inview__section--tempo .menu__button svg polygon {
   fill: #15123F;
 }
-.page .menu.inview__section--work-intro {
+.page .menu.inview__section--work-intro,
+.page .menu.inview__section--services {
   background: #EAE8FD;
 }
 .page .menu.inview__section--work-intro .menu__logo svg path,
+.page .menu.inview__section--services .menu__logo svg path,
 .page .menu.inview__section--work-intro .menu__logo-type svg path,
+.page .menu.inview__section--services .menu__logo-type svg path,
 .page .menu.inview__section--work-intro .menu__button svg path,
-.page .menu.inview__section--work-intro .menu__button svg polygon {
+.page .menu.inview__section--services .menu__button svg path,
+.page .menu.inview__section--work-intro .menu__button svg polygon,
+.page .menu.inview__section--services .menu__button svg polygon {
   fill: #15123F;
 }
 .page .menu.inview__section--work-content {
@@ -1559,7 +1555,7 @@ i[class*="icon-"]:before {
 }
 .card p {
   font-size: 1.5em;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 .card strong {
   font-weight: 700;
@@ -1639,6 +1635,16 @@ i[class*="icon-"]:before {
   left: 0;
   right: 0;
 }
+.card.card--grid .card__col-icon {
+  position: absolute;
+  margin: 0;
+}
+.card.card--grid .card__col-icon--bottom {
+  bottom: 1.5rem;
+}
+.card.card--grid .card__col-icon--top {
+  bottom: 1.5rem;
+}
 .card.card--gridlines:after {
   content: " ";
   position: absolute;
@@ -1704,13 +1710,14 @@ i[class*="icon-"]:before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  left: 0;
+  right: 3rem;
 }
 .card.card--center .container .col-content {
   padding-top: 0;
 }
 .card.card--intro h1 {
   font-size: 4rem;
-  margin-bottom: 1rem;
 }
 .card.card--intro .card__intro--subtitle {
   margin-top: 0;
@@ -1876,12 +1883,36 @@ i[class*="icon-"]:before {
 	Sections
 
 */
+.section + .section {
+  border-top: 3px solid #FFFFFF;
+}
 .section--grid.col-group {
   margin-left: -1rem;
   margin-right: -1rem;
 }
 .section--grid .section--grid__item {
   padding: 0 1rem 0 1rem;
+}
+.section--next.card .col-content p {
+  font-size: 1rem;
+}
+.section--next.card .section--next__address.col-content {
+  padding-top: 1rem;
+}
+.section--intro .icon-down {
+  position: absolute;
+  bottom: 3rem;
+  left: 8.33333333%;
+}
+.section--services .col-group h1 {
+  color: #2D1BF1;
+}
+.section--services .col-content h1 {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+}
+.section--services .col-content p {
+  font-size: 1rem;
 }
 .section--about {
   background-image: url(../img/section-about.jpg);
@@ -1917,6 +1948,20 @@ i[class*="icon-"]:before {
   border-color: #2FC4F3;
   color: #2FC4F3;
 }
+.page--tempo .section--next h1 {
+  color: #2FC4F3;
+}
+.page--tempo .section--next a {
+  color: #2FC4F3;
+}
+.page--tempo .section--next .btn {
+  border-color: #2FC4F3;
+  color: #2FC4F3;
+}
+.page--tempo .section--next .btn:hover {
+  border-color: #15123F;
+  color: #15123F;
+}
 .section--diving-island {
   background-image: url(../img/section-diving-island.jpg);
   background-size: cover;
@@ -1929,6 +1974,20 @@ i[class*="icon-"]:before {
 .page--divingisland .section--casestudies .card__col .btn:hover {
   border-color: #239D87;
   color: #239D87;
+}
+.page--divingisland .section--next h1 {
+  color: #239D87;
+}
+.page--divingisland .section--next a {
+  color: #239D87;
+}
+.page--divingisland .section--next .btn {
+  border-color: #239D87;
+  color: #239D87;
+}
+.page--divingisland .section--next .btn:hover {
+  border-color: #15123F;
+  color: #15123F;
 }
 .section.section--lsretail {
   background-image: url(../img/section-lsretail.jpg);
@@ -1943,6 +2002,20 @@ i[class*="icon-"]:before {
   border-color: #DD2F37;
   color: #DD2F37;
 }
+.page--lsretail .section--next h1 {
+  color: #DD2F37;
+}
+.page--lsretail .section--next a {
+  color: #DD2F37;
+}
+.page--lsretail .section--next .btn {
+  border-color: #DD2F37;
+  color: #DD2F37;
+}
+.page--lsretail .section--next .btn:hover {
+  border-color: #15123F;
+  color: #15123F;
+}
 .section--valitor {
   background-image: url(../img/section-valitor.jpg);
   background-size: cover;
@@ -1955,6 +2028,20 @@ i[class*="icon-"]:before {
 .page--valitor .section--casestudies .card__col .btn:hover {
   border-color: #e94811;
   color: #e94811;
+}
+.page--valitor .section--next h1 {
+  color: #e94811;
+}
+.page--valitor .section--next a {
+  color: #e94811;
+}
+.page--valitor .section--next .btn {
+  border-color: #e94811;
+  color: #e94811;
+}
+.page--valitor .section--next .btn:hover {
+  border-color: #15123F;
+  color: #15123F;
 }
 .section--whatweare h1 {
   font-size: 4rem;
@@ -1977,7 +2064,30 @@ i[class*="icon-"]:before {
 .section--ourvalues .section--ourvalues__item p {
   font-size: 1rem;
 }
-@media (min-width: 768px) {
+@media (max-height: 768px) {
+  .section.card {
+    height: auto;
+  }
+  .section.card .container {
+    padding: 3rem 0;
+  }
+  .section.card .col-content {
+    padding-top: 0;
+  }
+  .section.card.card--center .container {
+    padding: 3rem 0;
+    position: relative;
+    top: auto;
+    transform: none;
+  }
+  .section.card.card--grid .container {
+    padding: 0;
+  }
+  .card.card--grid .card__col {
+    height: 75vh;
+  }
+}
+@media (min-width: 1367px) {
   html,
   body {
     font-size: 24px;
