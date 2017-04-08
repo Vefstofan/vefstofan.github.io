@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="178px" height="133px" viewBox="0 0 178 133" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2" transform="translate(-915.000000, -641.000000)">
+            <g id="Group-2" transform="translate(917.000000, 643.000000)">
+                <path d="M-5.82645043e-13,72.2826087 C14.6763488,38.6920286 48.1941873,15.2173913 87.1948212,15.2173913 C126.195455,15.2173913 159.713294,38.6920286 174.389642,72.2826087 C159.713294,105.873189 126.195455,129.347826 87.1948212,129.347826 C48.1941873,129.347826 14.6763488,105.873189 -5.82645043e-13,72.2826087 Z" id="Combined-Shape" stroke="#15123F" stroke-width="3" fill="#FFFFFF"></path>
+                <path d="M0.3051788,38.0434783 C14.9815276,15.6497582 48.4993661,0 87.5,0 C126.500634,0 160.018472,15.6497582 174.694821,38.0434783" id="Combined-Shape" stroke="#2D1BF1" stroke-width="3" stroke-dasharray="5,8,4,8"></path>
+                <ellipse id="Oval-4" stroke="#15123F" stroke-width="3" fill="#EAE8FD" cx="87.5" cy="72.2826087" rx="57.0652174" ry="57.0652174"></ellipse>
+                <ellipse id="Oval-4" stroke="#15123F" stroke-width="3" fill="#FFFFFF" cx="87.5" cy="72.2826087" rx="19.0217391" ry="19.0217391"></ellipse>
+                <ellipse id="Oval-4" fill="#2D1BF1" cx="87.5" cy="72.2826087" rx="6.34057971" ry="6.34057971"></ellipse>
+                <path d="M0,72.2826087 L0,72.2826087 C14.6763488,49.8888886 48.1941873,34.2391304 87.1948212,34.2391304 C126.195455,34.2391304 159.713294,49.8888886 174.389642,72.2826087" id="Combined-Shape" stroke="#15123F" stroke-width="3"></path>
+            </g>
+        </g>
+    </g>
+</svg>

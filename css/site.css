@@ -1318,6 +1318,9 @@ p {
 .align-center {
   text-align: center;
 }
+.align-right {
+  text-align: right;
+}
 /*
 
 	Global
@@ -1409,6 +1412,12 @@ i[class*="icon-"]:before {
   position: relative;
   margin-top: -0.5em;
 }
+a.btn-fill.btn-white {
+  background: rgba(21, 18, 63, 0.3);
+}
+a.btn-fill.btn-white:hover {
+  background: #FFFFFF;
+}
 /*
 
 	Menu
@@ -1478,26 +1487,31 @@ i[class*="icon-"]:before {
   fill: #15123F;
 }
 .page .menu.inview__section--work-intro,
-.page .menu.inview__section--services {
+.page .menu.inview__section--next {
   background: #EAE8FD;
 }
 .page .menu.inview__section--work-intro .menu__logo svg path,
-.page .menu.inview__section--services .menu__logo svg path,
+.page .menu.inview__section--next .menu__logo svg path,
 .page .menu.inview__section--work-intro .menu__logo-type svg path,
-.page .menu.inview__section--services .menu__logo-type svg path,
+.page .menu.inview__section--next .menu__logo-type svg path,
 .page .menu.inview__section--work-intro .menu__button svg path,
-.page .menu.inview__section--services .menu__button svg path,
+.page .menu.inview__section--next .menu__button svg path,
 .page .menu.inview__section--work-intro .menu__button svg polygon,
-.page .menu.inview__section--services .menu__button svg polygon {
+.page .menu.inview__section--next .menu__button svg polygon {
   fill: #15123F;
 }
-.page .menu.inview__section--work-content {
+.page .menu.inview__section--work-content,
+.page .menu.inview__section--services {
   background: #15123F;
 }
 .page .menu.inview__section--work-content .menu__logo svg path,
+.page .menu.inview__section--services .menu__logo svg path,
 .page .menu.inview__section--work-content .menu__logo-type svg path,
+.page .menu.inview__section--services .menu__logo-type svg path,
 .page .menu.inview__section--work-content .menu__button svg path,
-.page .menu.inview__section--work-content .menu__button svg polygon {
+.page .menu.inview__section--services .menu__button svg path,
+.page .menu.inview__section--work-content .menu__button svg polygon,
+.page .menu.inview__section--services .menu__button svg polygon {
   fill: #FFFFFF;
 }
 .menu-list {
@@ -1893,6 +1907,16 @@ i[class*="icon-"]:before {
 .section--grid .section--grid__item {
   padding: 0 1rem 0 1rem;
 }
+.section--grid .section--grid__icon {
+  margin-top: 1.15rem;
+}
+.section--grid .section--grid__icon .col-content {
+  text-align: center;
+}
+.section--grid .section--grid__icon .col-content img {
+  position: relative;
+  left: -1rem;
+}
 .section--next.card .col-content p {
   font-size: 1rem;
 }
@@ -1901,15 +1925,23 @@ i[class*="icon-"]:before {
 }
 .section--intro .icon-down {
   position: absolute;
-  bottom: 3rem;
+  bottom: 6rem;
   left: 8.33333333%;
 }
-.section--services .col-group h1 {
+.section--services .container {
+  padding-bottom: 2rem;
+}
+.section--services .col-group > div > h1 {
+  margin-top: 4rem;
+  margin-bottom: 2.5rem;
   color: #2D1BF1;
+}
+.section--services .col-content {
+  padding-top: 0;
 }
 .section--services .col-content h1 {
   font-size: 1.5rem;
-  color: #FFFFFF;
+  color: #15123F;
 }
 .section--services .col-content p {
   font-size: 1rem;
@@ -2065,6 +2097,9 @@ i[class*="icon-"]:before {
   font-size: 1rem;
 }
 @media (max-height: 650px) {
+  .section--intro .icon-down {
+    display: none;
+  }
   .section.card {
     height: auto;
   }
