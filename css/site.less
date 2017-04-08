@@ -169,6 +169,7 @@ a.btn {
 	&:hover {
 		color: @color-blue;
 		border-color: @color-blue;
+		background: @color-white;
 	}
 }
 
@@ -248,7 +249,7 @@ a.btn-fill.btn-white {
 			fill: @color-darkgray;
 		}
 	}
-	&.inview__section--work-intro, &.inview__section--next {
+	&.inview__section--work-intro, &.inview__section--next, &.inview__section--whatwebelieve, &.inview__section--ourvalues {
 		background: @color-gray;
 		.menu__logo svg path, .menu__logo-type svg path, .menu__button svg path, .menu__button svg polygon {
 			fill: @color-darkgray;
@@ -272,7 +273,7 @@ a.btn-fill.btn-white {
 	transition: @transitionBezier;
 	transform: translateX(0);
 	opacity: 0;
-	z-index: 0;
+	z-index: -2;
 	ul {
 		position: absolute;
 		bottom: 3rem;
@@ -336,6 +337,7 @@ a.btn-fill.btn-white {
 		padding-top: 3rem;
 	}
 	&.card--white {
+		background-color: @color-white;
 		h1 {
 			color: @color-blue;
 		}
@@ -593,8 +595,16 @@ a.btn-fill.btn-white {
 
 */
 
+.section {
+	position: relative;
+}
+
 .section + .section {
 	border-top: 3px solid @color-white;
+}
+
+body > div.section:nth-last-of-type(2) {
+	margin-bottom: 50vh;
 }
 
 .section--grid {
@@ -615,6 +625,13 @@ a.btn-fill.btn-white {
 			}
 		}
 	}
+}
+
+.section--next {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: -1;
 }
 
 .section--next.card .col-content {
@@ -866,28 +883,44 @@ a.btn-fill.btn-white {
 }
 
 .section--whatwebelieve {
+	.container {
+		padding-top: 3rem;
+		padding-bottom: 5rem;
+	}
 	.section--grid h1 {
 		font-size: 1.5rem;
 	}
 	.section--grid .col-content {
 		padding-top: 1rem;
+		padding-bottom: 0;
 	}
 	p {
 		font-size: 1rem;
 	}
+	.section--grid__icon {
+		margin-top: 3rem;
+	}
 }
 
 .section--ourvalues {
-	.section--ourvalues__item {
-		.col-content {
-			padding-top: 0;
-		}
-		h1 {
-			font-size: 1.5rem;
-		}
+	.container {
+		padding-top: 3rem;
+		padding-bottom: 5rem;
+	}
+	.section--grid .col-content {
+		padding-top: 1rem;
+		padding-bottom: 0;
+	}
+	.section--grid__item {
 		p {
 			font-size: 1rem;
 		}
+	}
+	.col-group > div > p {
+		margin-top: 0;
+	}
+	.col-group > div > h1 {
+		margin-bottom: 0;
 	}
 }
 
@@ -902,7 +935,6 @@ a.btn-fill.btn-white {
 			display: none;
 		}
 	}
-
 
 	// Cards when small vertical height
 

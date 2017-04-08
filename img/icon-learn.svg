@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="111px" height="166px" viewBox="0 0 111 166" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2" transform="translate(-617.000000, -1204.000000)">
+            <g id="Page-1" transform="translate(618.000000, 1205.000000)">
+                <polygon id="Fill-1" fill="#15123F" points="1.01851852 14.6644259 107.553519 1.42164815 107.553519 127.717944 1.01851852 127.717944"></polygon>
+                <g id="Group-19" transform="translate(0.000000, 1.056407)">
+                    <polygon id="Stroke-2" stroke="#FFFDFD" stroke-width="3" points="1.01851852 13.6080185 107.553519 0.365240741 107.553519 126.661537 1.01851852 126.661537"></polygon>
+                    <path d="M107.553111,150.087667 L11.3031111,150.087667 C5.67681481,150.087667 1.11792593,145.528778 1.11792593,139.902481 L1.11792593,129.208037 C1.11792593,123.581741 5.67681481,119.022852 11.3031111,119.022852 L107.553111,119.022852 L107.553111,150.087667 Z" id="Fill-4" fill="#15123F"></path>
+                    <path d="M107.553111,150.087667 L11.3031111,150.087667 C5.67681481,150.087667 1.11792593,145.528778 1.11792593,139.902481 L1.11792593,129.208037 C1.11792593,123.581741 5.67681481,119.022852 11.3031111,119.022852 L107.553111,119.022852 L107.553111,150.087667 Z" id="Stroke-6" stroke="#FFFDFD" stroke-width="3"></path>
+                    <g id="Group-11">
+                        <path d="M1.11792593,17.2484074 L1.11792593,10.3795185 C1.11792593,4.75322222 5.67681481,0.194333333 11.3031111,0.194333333 L107.553111,0.194333333 L107.553111,25.148037" id="Fill-8" fill="#15123F"></path>
+                        <path d="M1.11792593,17.2484074 L1.11792593,10.3795185 C1.11792593,4.75322222 5.67681481,0.194333333 11.3031111,0.194333333 L107.553111,0.194333333 L107.553111,25.148037" id="Stroke-10" stroke="#FFFDFD" stroke-width="3"></path>
+                    </g>
+                    <path d="M14.1895926,129.379148 L106.874778,129.379148" id="Stroke-12" stroke="#FFFDFD" stroke-width="3"></path>
+                    <polygon id="Stroke-14" stroke="#FFFDFD" stroke-width="3" points="30.8264815 42.1259259 78.3566667 42.1259259 78.3566667 17.0011111 30.8264815 17.0011111"></polygon>
+                    <path d="M14.1895926,139.564333 L106.874778,139.564333" id="Stroke-16" stroke="#FFFDFD" stroke-width="3"></path>
+                    <polygon id="Fill-17" fill="#2D1BF1" points="88.7105185 161.036741 80.3077407 154.92563 71.1410741 161.036741 71.1410741 129.717296 88.7105185 129.717296"></polygon>
+                    <polygon id="Stroke-18" stroke="#FFFDFD" stroke-width="3" points="88.7105185 161.036741 80.3077407 154.92563 71.1410741 161.036741 71.1410741 129.717296 88.7105185 129.717296"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
