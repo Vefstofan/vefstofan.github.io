@@ -23,8 +23,6 @@ $(function() {
 
 	}
 
-	//setTimeout(menuState, 100);
-
 	$(window).on("scroll", function() {
 
 		menuState();

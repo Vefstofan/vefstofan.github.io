@@ -566,15 +566,20 @@ a.btn-fill.btn-white {
 	}
 }
 
-.section--next.card .col-content {
-	p {
-		font-size: 1rem;
+.section--next.card {
+	.container {
+		padding-bottom: 4rem;
+	}
+	.col-content {
+		p {
+			font-size: 1rem;
+		}
+	}
+	.section--next__address.col-content {
+		padding-top: 1rem;
 	}
 }
 
-.section--next.card .section--next__address.col-content {
-	padding-top: 1rem;
-}
 
 // Home
 
@@ -808,7 +813,7 @@ a.btn-fill.btn-white {
 
 .section--whatweare {
 	h1 {
-		font-size: 4rem;
+		font-size: 3rem;
 	}
 }
 
@@ -941,6 +946,10 @@ a.btn-fill.btn-white {
 			.card__col {
 				height: 50vh;
 				position: relative;
+				
+			}
+			.card__col + .card__col {
+				border: 0;
 			}
 			.card__col--center .col-content {
 				position: absolute;
@@ -996,6 +1005,7 @@ a.btn-fill.btn-white {
 				bottom: 0;
 				z-index: -1;
 				opacity: 0;
+				padding: 0;
 				transition: @transitionBezier;
 				.card__col--cta-c {
 					position: absolute;
@@ -1016,7 +1026,7 @@ a.btn-fill.btn-white {
 				background: @color-darkgray;
 				transition: @transitionBezier;
 				opacity: 1;
-				padding: 0;
+				
 				.btn {
 					top: 0;
 				}
@@ -1047,6 +1057,12 @@ a.btn-fill.btn-white {
 		}
 	}
 
+	.section--whatweare {
+		h1 {
+			font-size: 4rem;
+		}
+	}
+
 	// Next
 
 	body > div.section:nth-last-of-type(2) {
@@ -1058,6 +1074,9 @@ a.btn-fill.btn-white {
 		bottom: 0;
 		width: 100%;
 		z-index: -1;
+		.container {
+			padding-bottom: 0;
+		}
 	}
 
 
