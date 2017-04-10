@@ -6,7 +6,7 @@
     "Andri Sigurðsson"
   ],
   "license": "MIT",
-  "homepage": "http://www.sigur.io",
+  "homepage": "http://sigur.io",
   "private": true,
   "ignore": [
     "**/.*",
