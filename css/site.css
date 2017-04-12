@@ -1884,7 +1884,7 @@ a.btn-fill.btn-white:hover {
 .section--next.card .col-content p {
   font-size: 1rem;
 }
-.section--next.card .section--next__address.col-content {
+.section--next.card .container .section--next__address.col-content {
   padding-top: 1rem;
 }
 .section--intro .icon-down {
@@ -2230,7 +2230,8 @@ a.btn-fill.btn-white:hover {
   .section--next {
     position: fixed;
     bottom: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
     z-index: -1;
   }
   .section--next .container {
