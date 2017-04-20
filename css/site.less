@@ -146,7 +146,7 @@ i:before {
 	vertical-align: middle;
 }
 
-a.btn {
+a.btn, input.btn {
 	font-size: 1rem;
 	line-height: 2em;
 	color: @color-blue;
@@ -163,6 +163,10 @@ a.btn {
 		color: @color-darkgray;
 		.transition;
 	}
+}
+
+input.btn {
+	background: #fff;
 }
 
 .btn-white, a.btn-white {
@@ -856,6 +860,114 @@ a.btn-fill.btn-white {
 	}
 	.col-group > div > h1 {
 		margin-bottom: 0;
+	}
+}
+
+.section--formsent {
+	display: none;
+}
+
+body.form--sent {
+	.section--form {
+		display: none;
+	}
+	.section--formsent {
+		display: block;
+	}
+}
+
+.section--form {
+	.form {
+		padding-bottom: 10rem;
+		&.form--on {
+			.form__bar {
+				opacity: 100 !important;
+			}
+		}
+		&.form--done .form__action {
+			.btn {
+				color: @color-blue;
+				border-color: @color-blue;
+				pointer-events: auto;
+			}
+		}
+		.form__input {
+			padding-bottom: 1.5rem;
+			font-size: 1.5rem;
+			label {
+				font-weight: 700;
+				line-height: 3rem;
+			}
+			input, textarea {
+				width: 100%;
+				box-sizing: border-box;
+				line-height: 3rem;
+				padding: 0 1rem;
+				//box-shadow: 0 0 48px fade(@color-darkgray, 10%);
+				border: 3px solid @color-gray;
+				color: @color-darkgray;
+				&:active, &:focus {
+					outline: none;
+					border-color: @color-blue;
+				}
+				&::-webkit-input-placeholder {
+					color: fade(@color-darkgray, 30%);
+				}
+				&::-moz-placeholder {
+					color: fade(@color-darkgray, 30%);
+				}
+				&:-ms-input-placeholder {
+					color: fade(@color-darkgray, 30%);
+				}
+				&:-moz-placeholder {
+					color: fade(@color-darkgray, 30%);
+				}
+			}
+			textarea {
+				line-height: 1.5rem;
+				padding: 1rem;
+			}
+		}
+		.form__action {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 3rem;
+			padding: 2rem;
+			padding-left: calc(1 / 12% * 100);
+			padding-right: calc(1 / 12% * 100);
+			background: @color-gray;
+			.btn {
+				float: right;
+				font-size: 1.5rem;
+				color: @color-gray;
+				border-color: @color-white;
+				transition: @transitionBezier;
+				pointer-events: none;
+				outline: none;
+			}
+			.form__bar {
+				opacity: 0;
+				width: 75%;
+				background: @color-white;
+				transition: @transitionBezier;
+			}
+			.form__progress {
+				background: @color-blue;
+				margin-right: 2rem;
+				line-height: 3.35rem;
+				box-sizing: border-box;
+				padding: 0 2rem;
+				width: 75%;
+				overflow: hidden;
+				color: @color-gray;
+				transition: @transitionBezier;
+				span {
+					display: block;
+					white-space: nowrap;
+				}
+			}
+		}
 	}
 }
 

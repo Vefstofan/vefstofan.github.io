@@ -10221,6 +10221,58 @@ return jQuery;
 
 $(function() {
 
+	// Form
+
+	$(".form .form__input input, .form .form__input textarea").on("change, keyup", function(){
+		formChange();
+	});
+
+	function formChange() {
+		var c = 0;
+		$fields = $(".form .form__input input, .form .form__input textarea");
+		$fields.each(function(){
+			if ($(this).val()) {
+				console.log($(this).attr("id"));
+				c++;
+			}
+		});
+		var prog_num = Math.round(c / $fields.length * 10).toFixed(1) * 10;
+		$(".form .form__action .form__progress span").text(prog_num + "% done!");
+		$(".form .form__action .form__progress").css("width", prog_num + "%");
+		if (c != 0) {
+			$(".form").addClass("form--on");
+		} else {
+			$(".form").removeClass("form--on");
+		}
+		if (c == $fields.length) {
+			$(".form").addClass("form--done");
+		} else {
+			$(".form").removeClass("form--done");
+		}
+		
+	}
+
+	$("form.form").on("submit", function(){
+		$.ajax({
+		    url: "https://formspree.io/hello@sigur.io", 
+		    method: "POST",
+		    data: {
+		    	name: $("#form-name").val(),
+		    	organization: $("#form-organization").val(),
+		    	title: $("#form-title").val(),
+		    	email: $("#form-email").val(),
+		    	statement: $("#form-statement").val(),
+		    	deadline: $("#form-date").val(),
+		    	budget: $("#form-name").val()
+		    },
+		    dataType: "json"
+		}).done(function(data){
+			$("body").addClass("form--sent");
+		});
+		
+		return false;
+	});
+
 	// Menu button
 
 	$(".menu .menu__button").on("click", function(event){
