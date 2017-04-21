@@ -914,6 +914,8 @@ body.form--sent {
 				//box-shadow: 0 0 48px fade(@color-darkgray, 10%);
 				border: 3px solid @color-gray;
 				color: @color-darkgray;
+				border-radius: 0;
+				-webkit-appearance: none;
 				&:active, &:focus {
 					outline: none;
 					border-color: @color-blue;
@@ -944,10 +946,11 @@ body.form--sent {
 			bottom: 0;
 			left: 0;
 			right: 3rem;
-			padding: 2rem;
+			padding: 1rem 2rem;
 			padding-left: calc(1 / 12% * 100);
 			padding-right: calc(1 / 12% * 100);
 			background: @color-gray;
+			-webkit-appearance: none;
 			.btn {
 				float: right;
 				font-size: 1.5rem;
@@ -958,6 +961,7 @@ body.form--sent {
 				outline: none;
 				position: relative;
 				z-index: 10;
+				border-radius: 0;
 				&:hover {
 					background: @color-blue;
 					color: @color-white;
@@ -975,7 +979,7 @@ body.form--sent {
 			}
 			.form__progress {
 				background: @color-darkgray;
-				line-height: 7.35rem;
+				line-height: 5.35rem;
 				box-sizing: border-box;
 				padding: 0 calc(1 / 12% * 100);
 				width: 0%;

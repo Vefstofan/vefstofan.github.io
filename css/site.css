@@ -2125,6 +2125,8 @@ body.form--sent .section--formsent {
   padding: 0 1rem;
   border: 3px solid #EAE8FD;
   color: #15123F;
+  border-radius: 0;
+  -webkit-appearance: none;
 }
 .section--form .form .form__input input:active,
 .section--form .form .form__input textarea:active,
@@ -2161,10 +2163,11 @@ body.form--sent .section--formsent {
   bottom: 0;
   left: 0;
   right: 3rem;
-  padding: 2rem;
+  padding: 1rem 2rem;
   padding-left: calc(8.33333333%);
   padding-right: calc(8.33333333%);
   background: #EAE8FD;
+  -webkit-appearance: none;
 }
 .section--form .form .form__action .btn {
   float: right;
@@ -2176,6 +2179,7 @@ body.form--sent .section--formsent {
   outline: none;
   position: relative;
   z-index: 10;
+  border-radius: 0;
 }
 .section--form .form .form__action .btn:hover {
   background: #2D1BF1;
@@ -2193,7 +2197,7 @@ body.form--sent .section--formsent {
 }
 .section--form .form .form__action .form__progress {
   background: #15123F;
-  line-height: 7.35rem;
+  line-height: 5.35rem;
   box-sizing: border-box;
   padding: 0 calc(8.33333333%);
   width: 0%;
