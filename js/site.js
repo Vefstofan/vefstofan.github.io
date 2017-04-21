@@ -16,7 +16,7 @@ $(function() {
 			}
 		});
 		var prog_num = Math.round(c / $fields.length * 10).toFixed(1) * 10;
-		$(".form .form__action .form__progress span").text(prog_num + "% done!");
+		$(".form .form__action .form__progress span").text(prog_num + "% done");
 		$(".form .form__action .form__progress").css("width", prog_num + "%");
 		if (c != 0) {
 			$(".form").addClass("form--on");
