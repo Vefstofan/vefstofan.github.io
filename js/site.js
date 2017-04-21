@@ -11,7 +11,6 @@ $(function() {
 		$fields = $(".form .form__input input, .form .form__input textarea");
 		$fields.each(function(){
 			if ($(this).val()) {
-				console.log($(this).attr("id"));
 				c++;
 			}
 		});
@@ -50,6 +49,11 @@ $(function() {
 			$("body").addClass("form--sent");
 		});
 		event.preventDefault();
+		return false;
+	});
+
+	$(".form .form__input input").on("invalid", function(event){
+		$(event.target).focus();
 		return false;
 	});
 
