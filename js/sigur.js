@@ -10252,10 +10252,11 @@ $(function() {
 		
 	}
 
-	$("form.form").on("submit", function(){
+	$("form.form").on("submit", function(event){
 		$.ajax({
 		    url: "https://formspree.io/hello@sigur.io", 
 		    method: "POST",
+		    headers: {"Accept": "application/json"},
 		    data: {
 		    	name: $("#form-name").val(),
 		    	organization: $("#form-organization").val(),
@@ -10269,7 +10270,7 @@ $(function() {
 		}).done(function(data){
 			$("body").addClass("form--sent");
 		});
-		
+		event.preventDefault();
 		return false;
 	});
 
