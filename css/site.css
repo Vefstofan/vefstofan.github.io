@@ -2108,6 +2108,9 @@ body.form--sent .section--formsent {
   border-color: #2D1BF1;
   pointer-events: auto;
 }
+.section--form .form .form__input--direct p {
+  font-size: 1.5rem;
+}
 .section--form .form .form__input {
   padding-bottom: 1.5rem;
   font-size: 1.5rem;
