@@ -2377,6 +2377,9 @@ body.form--sent .section--formsent {
     padding-top: 0rem;
     padding-bottom: 0rem;
   }
+  .section--founder p {
+    font-size: 1rem;
+  }
   body > div.section:nth-last-of-type(2) {
     margin-bottom: 50vh;
   }
