@@ -10291,7 +10291,7 @@ $(function() {
 
 		$menu = $(".menu");
 
-		$(".section").each(function(){
+		$(".section:not(.section--next)").each(function(){
 			var section = $(this).attr("class").split(" ");
 			if (isOnElement($(this), ".menu")) {
 				$menu.alterClass("inview__*");
